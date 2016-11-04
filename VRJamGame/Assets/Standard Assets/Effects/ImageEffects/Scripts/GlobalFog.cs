@@ -22,6 +22,7 @@ namespace UnityStandardAssets.ImageEffects
         public float heightDensity = 2.0f;
 		[Tooltip("Push fog away from the camera by this amount")]
         public float startDistance = 0.0f;
+        public Color tint;
 
         public Shader fogShader = null;
         private Material fogMaterial = null;

@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 7
   m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogColor: {r: 0.40116784, g: 0.43507928, b: 0.7794118, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2112666221}
-  m_IndirectSpecularColor: {r: 0.066190675, g: 0.09102143, b: 0.23131211, a: 1}
+  m_IndirectSpecularColor: {r: 0.15809403, g: 0.11927319, b: 1.0806273, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -331,10 +331,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1359892251}
-  m_LocalRotation: {x: 0.0029659925, y: 0.99631804, z: 0.085405275, w: 0.0069013573}
+  m_LocalRotation: {x: -0.008047273, y: 0.9969995, z: 0.017514173, w: 0.07496988}
   m_LocalPosition: {x: 0, y: 1.949, z: 0}
   m_LocalScale: {x: 0.058242712, y: 0.058242682, z: 0.058242682}
-  m_LocalEulerAnglesHint: {x: -9.740001, y: 179.195, z: 0.4}
+  m_LocalEulerAnglesHint: {x: -2.049, y: 171.641, z: -0.74700004}
   m_Children: []
   m_Father: {fileID: 268064673}
   m_RootOrder: 0
@@ -355,7 +355,8 @@ MonoBehaviour:
   heightFog: 1
   height: 4.4
   heightDensity: 2.5
-  startDistance: 290
+  startDistance: 270
+  tint: {r: 0, g: 0, b: 0, a: 0}
   fogShader: {fileID: 4800000, guid: 70d8568987ac0499f952b54c7c13e265, type: 3}
 --- !u!1 &2112666220
 GameObject:
