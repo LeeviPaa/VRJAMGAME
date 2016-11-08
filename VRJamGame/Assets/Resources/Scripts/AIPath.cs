@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Path : MonoBehaviour {
+public class AIPath : MonoBehaviour {
 
     public List<GameObject> pathlist;
 	void Start () 

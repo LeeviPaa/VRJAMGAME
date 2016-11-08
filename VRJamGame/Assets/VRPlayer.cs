@@ -33,8 +33,8 @@ public class VRPlayer : MonoBehaviour
         Vector2 rightTriggerAxis = rightHand.GetTriggerAxis();
         Vector2 leftTriggerAxis = leftHand.GetTriggerAxis();
 
-        print(rightTriggerAxis + " Right trigger");
-        print(leftTriggerAxis + " Left trigger");
+        //print(rightTriggerAxis + " Right trigger");
+        //print(leftTriggerAxis + " Left trigger");
 
         if (rightTriggerAxis.x > 0.5f || rightTriggerAxis.y > 0.5f)
         {
