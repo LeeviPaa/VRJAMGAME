@@ -5,10 +5,13 @@ public class EnemyInteractions : MonoBehaviour {
 
     public float EnemyMaxHealth = 100;
     public float EnemyCurrentHealth;
+    private AIPathfinding pathScript;
+
     public Vector3 Home = new Vector3(0,0,0);
     private bool HasExploded = false;
 	void Start () 
     {
+        pathScript = gameObject.GetComponent<AIPathfinding>();
         EnemyCurrentHealth = EnemyMaxHealth;
 	}
 
@@ -30,7 +33,13 @@ public class EnemyInteractions : MonoBehaviour {
         EnemyCurrentHealth = EnemyMaxHealth;
         transform.position = Home;
         transform.gameObject.SetActive(false);
+        Respawn(); //we could have a conditional respawn..
 
+    }
+    private void Respawn()
+    {
+        transform.gameObject.SetActive(true);
+        pathScript.SetWaypointIndex(0);
     }
 
     public void SetHome(Vector3 set)

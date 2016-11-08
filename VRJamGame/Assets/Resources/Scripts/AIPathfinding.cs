@@ -20,4 +20,9 @@ public class AIPathfinding : MonoBehaviour {
         if(navmesh.enabled == true)
         navmesh.SetDestination(target);
     }
+
+    public void SetWaypointIndex(int index)
+    {
+        navmesh.SetDestination(PathScript.GetWaypoint(index));
+    }
 }
